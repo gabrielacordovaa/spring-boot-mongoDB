@@ -23,6 +23,7 @@ public class PostService {
 	}
 	
 	public List<Post> findByTitlee(String text){
-		return postRepository.findByTitleContaining(text);
+		//return postRepository.findByTitleContaining(text);
+		return postRepository.findByTitle(text);
 	}
 }
